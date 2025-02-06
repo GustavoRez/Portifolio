@@ -1,7 +1,5 @@
-/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/* Variáveis de Cores */
 :root {
     --primary-color: #00d2ff;
     --secondary-color: #3a3a3a;
@@ -15,7 +13,6 @@
     --transition-speed: 0.3s;
 }
 
-/* Reset e Base */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +27,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
 header {
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -90,7 +86,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Menu Toggle (Mobile) */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -105,7 +100,6 @@ nav ul li a:hover::after {
     transition: all 0.3s ease;
 }
 
-/* Hero Section */
 .hero-section {
     height: 100vh;
     display: flex;
@@ -175,7 +169,6 @@ nav ul li a:hover::after {
     }
 }
 
-/* Particles.js Canvas */
 .particles {
     position: absolute;
     top: 0;
@@ -185,7 +178,6 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
-/* About Section */
 .about-p {
     margin: 1rem
 }
@@ -222,7 +214,6 @@ nav ul li a:hover::after {
     line-height: 1.8;
 }
 
-/* Projects Section */
 .projects-section {
     padding: 4rem 2rem;
 }
@@ -296,6 +287,7 @@ nav ul li a:hover::after {
 
 .project-lang {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -362,7 +354,6 @@ nav ul li a:hover::after {
     color: var(--btn-hover-text-color);
 }
 
-/* Skills Section */
 .skills-section {
     background: #2a2a2a;
     padding: 4rem 2rem;
@@ -423,7 +414,6 @@ nav ul li a:hover::after {
     font-size: 1.2rem;
 }
 
-/* Footer */
 footer {
     background: rgba(0, 0, 0, 0.9);
     color: var(--text-color);
@@ -446,7 +436,6 @@ footer p {
     color: var(--accent-color);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
