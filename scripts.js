@@ -2,10 +2,12 @@
 const menu = document.getElementById('mobile-menu');
 const nav = document.querySelector('nav ul');
 
-menu.addEventListener('click', function() {
+menu.addEventListener('click', function () {
     nav.classList.toggle('active');
     menu.classList.toggle('open');
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 // Inicialização do Particles.js
 particlesJS("particles-js", {
