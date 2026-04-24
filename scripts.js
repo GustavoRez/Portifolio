@@ -88,3 +88,30 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function selectItem(element) {
+    // 1. Pega o texto do item clicado
+    const itemText = element.innerText;
+    
+    // 2. Atualiza o texto do botão principal
+    document.getElementById("selected-item").innerText = itemText;
+    
+    // 3. Fecha o dropdown após selecionar
+    document.getElementById("myDropdown").classList.remove("show");
+}
+
+// Fecha se clicar fora do menu
+window.onclick = function(event) {
+    if (!event.target.closest('.dropdown')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            if (dropdowns[i].classList.contains('show')) {
+                dropdowns[i].classList.remove('show');
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Gustavo Garcia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Gustavo Garcia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">
+                            <span id="selected-item">US</span> ▼
+                        </a>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="../pt/index.html" onclick="selectItem(this)">BR</a>
+                            <a href="../en/index.html" onclick="selectItem(this)">US</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Welcome to my Portfolio</h2>
+            <p>FullStack Developer & Prompt Engineer</p>
+            <a href="#projects" class="btn">Check My Projects</a>
+        </div>
+        <div class="particles" id="particles-js"></div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About me</h2>
+            <p class="about-p">I am a full-stack developer passionate about building practical solutions for complex
+                problems. With a solid foundation in both client-side and server-side development, I also specialize in
+                creating efficient database architectures.</p>
+
+            <p class="about-p">I am currently leveraging AI technologies to streamline processes and craft innovative
+                applications. My philosophy is rooted in simplicity and efficiency—delivering high-quality code that
+                meets deadlines without compromise.</p>
+
+            <p class="about-p">Ready for a new challenge, I am seeking a collaborative team where I can apply my skills
+                to drive meaningful impact.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-carousel">
+                <div class="project-card">
+                    <h1 class="project-lang">Node.Js</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto6.png" alt="Real Estate Sales Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>Real Estate Sales Website</h3>
+                        <p>A website developed as a real estate showcase for both sales and rentals. This project was
+                            designed to help a real estate agent launch their independent career phase.
+                        </p>
+                        <a target='_blank' href="https://horizonte-imoveis-praia-grande.vercel.app" class="btn">Check Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">React</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto5.png" alt="E-commerce Store Website">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Store Website</h3>
+                        <p>A generic store website focused on improving front-end skills. It features three pages with
+                            dynamic transitions for a less static feel and includes AI-generated illustrative images.
+                        </p>
+                        <a target='_blank' href="https://site-loja-de-roupas.vercel.app" class="btn">Check Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">React Native</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto2.jpeg" alt="Truck Management System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Truck Management System</h3>
+                        <p>A project built for a transport company to automate processes previously done on paper,
+                            ensuring better control, efficiency, and sustainability.</p>
+                        <a target='_blank'
+                            href="https://drive.google.com/uc?export=download&id=1LbPmjUFnqOgauCK92bJYTBJaRLiUA2lz"
+                            class="btn">Download APK (Google Drive)</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">HTML, CSS e JS<br>(Alura)</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto4.png" alt="Projeto 4">
+                    </div>
+                    <div class="project-content">
+                        <h3>Spotify UI Clone</h3>
+                        <p>Developed during an Alura immersion, this project recreates the Spotify homepage interface to
+                            practice layout fidelity and DOM manipulation.</p>
+                        <a target='_blank' href="https://imersao-alura-front-end-three.vercel.app" class="btn">Check Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">React</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto8.png" alt="JavaScript Testing Sandbox">
+                    </div>
+                    <div class="project-content">
+                        <h3>JavaScript Testing Sandbox</h3>
+                        <p>A sandbox environment created for learning React, featuring a basic chat system where
+                            messages are stored in the local page cache.<br>Users: Ana/João | Pass: 1234
+                        </p>
+                        <a target='_blank' href="https://react-tests-sand.vercel.app" class="btn">Check Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">HTML + CSS</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto7.png" alt="CSS Training Sandbox">
+                    </div>
+                    <div class="project-content">
+                        <h3>CSS Training Sandbox</h3>
+                        <p>A project focused on mastering raw CSS, emphasizing the fundamental role of styling in user
+                            experience.<br>My first 'sandbox' project.
+                        </p>
+                        <a target='_blank' href="https://css-tests-kappa.vercel.app/index.html" class="btn">Check Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">HTML, CSS e JS</h1>
+                    <div class="project-image">
+                        <img src="../images/projeto3.png" alt="VPN Tutorial Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>VPN Tutorial Project</h3>
+                        <p>A basic interactive tutorial built with HTML and JavaScript teaching how to set up a VPN
+                            using Cisco Packet Tracer software.</p>
+                        <a target='_blank' href="https://redes-vpn.vercel.app" class="btn">Check Website</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h1 class="project-lang">Other Languages</h1>
+                    <div class="project-content">
+                        <h3>Additional Project Examples</h3>
+                        <p>A repository of various projects, including mobile apps, pure back-end systems, and tools
+                            requiring external servers or databases.</p>
+                        <a target='_blank' href="https://github.com/GustavoRez?tab=repositories" class="btn">Check Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="skill-icon">💻</i>
+                    <h3>FullStack Development</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="skill-icon">🧠</i>
+                    <h3>Prompt Engineering</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="skill-icon">📱</i>
+                    <h3>Mobile Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> | Gustavo Garcia | All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://br.linkedin.com/in/gustavo-de-rezende-garcia-835001275" target="_blank">LinkedIn</a>
+                <a href="https://github.com/GustavoRez" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>
